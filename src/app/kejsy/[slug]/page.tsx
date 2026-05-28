@@ -5,6 +5,8 @@ import { categories, services } from "@/lib/services";
 import { site } from "@/lib/site";
 import { PageHeader } from "@/components/PageHeader";
 import { AuditForm } from "@/components/sections/AuditForm";
+import { JsonLd } from "@/components/JsonLd";
+import { breadcrumbLd, articleLd, clampDesc } from "@/lib/seo";
 import { CaseBody } from "./CaseBody";
 
 interface Props {
@@ -21,7 +23,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!k) return {};
   return {
     title: k.title,
-    description: `${k.short}. ${k.description}`.slice(0, 158),
+    description: clampDesc(`${k.short}. ${k.description}`),
+    alternates: { canonical: `/kejsy/${k.slug}` },
   };
 }
 
@@ -47,6 +50,20 @@ export default async function CasePage({ params }: Props) {
 
   return (
     <>
+      <JsonLd
+        data={[
+          breadcrumbLd([
+            { name: "Головна", path: "/" },
+            { name: "Кейси", path: "/kejsy" },
+            { name: k.client, path: `/kejsy/${k.slug}` },
+          ]),
+          articleLd({
+            headline: k.title,
+            description: clampDesc(`${k.short}. ${k.description}`),
+            path: `/kejsy/${k.slug}`,
+          }),
+        ]}
+      />
       <PageHeader
         eyebrow={`${k.category} · ${k.region}`}
         title={k.title}

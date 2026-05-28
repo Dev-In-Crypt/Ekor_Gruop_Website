@@ -4,7 +4,9 @@ import "./globals.css";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { SmoothScroll } from "@/components/anim/SmoothScroll";
+import { JsonLd } from "@/components/JsonLd";
 import { site } from "@/lib/site";
+import { organizationLd } from "@/lib/seo";
 
 const display = Oswald({
   variable: "--font-bebas",
@@ -79,6 +81,7 @@ export default function RootLayout({
       className={`${display.variable} ${ui.variable} ${body.variable} ${mono.variable}`}
     >
       <body>
+        <JsonLd data={organizationLd()} />
         <a href="#main" className="skip-link">
           Перейти до контенту
         </a>

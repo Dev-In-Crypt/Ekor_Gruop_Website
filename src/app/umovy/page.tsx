@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   title: "Умови використання",
   description:
     "Правила використання сайту ekor-ukraine.com.ua. Інтелектуальна власність, відповідальність, зміни умов.",
+  alternates: { canonical: "/umovy" },
 };
 
 export default function UmovyPage() {

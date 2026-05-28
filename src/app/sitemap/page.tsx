@@ -7,9 +7,10 @@ import { cases } from "@/lib/cases";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Карта сайту",
+  title: "Карта сайту — усі сторінки ЄКОР",
   description:
     "Повна структура сайту ekor-ukraine.com.ua — усі категорії послуг, рішення за галузями, регіони, кейси та службові сторінки.",
+  alternates: { canonical: "/sitemap" },
 };
 
 export default function HTMLSitemap() {

@@ -3,6 +3,8 @@ import type { Metadata } from "next";
 import { categories, categoryBySlug, servicesByCategory } from "@/lib/services";
 import { PageHeader } from "@/components/PageHeader";
 import { AuditForm } from "@/components/sections/AuditForm";
+import { JsonLd } from "@/components/JsonLd";
+import { breadcrumbLd, clampDesc } from "@/lib/seo";
 import { CategoryBody } from "./CategoryBody";
 
 interface Props {
@@ -17,7 +19,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { category } = await params;
   const cat = categoryBySlug(category);
   if (!cat) return {};
-  return { title: cat.title, description: cat.description };
+  return {
+    title: cat.title,
+    description: clampDesc(cat.description),
+    alternates: { canonical: `/poslugy/${cat.slug}` },
+  };
 }
 
 export default async function CategoryPage({ params }: Props) {
@@ -29,6 +35,13 @@ export default async function CategoryPage({ params }: Props) {
 
   return (
     <>
+      <JsonLd
+        data={breadcrumbLd([
+          { name: "Головна", path: "/" },
+          { name: "Послуги", path: "/poslugy" },
+          { name: cat.title, path: `/poslugy/${cat.slug}` },
+        ])}
+      />
       <PageHeader
         eyebrow="Категорія послуг"
         title={cat.title}

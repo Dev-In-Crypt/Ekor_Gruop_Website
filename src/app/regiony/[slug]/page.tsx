@@ -3,6 +3,8 @@ import type { Metadata } from "next";
 import { regions, regionBySlug } from "@/lib/regions";
 import { PageHeader } from "@/components/PageHeader";
 import { AuditForm } from "@/components/sections/AuditForm";
+import { JsonLd } from "@/components/JsonLd";
+import { breadcrumbLd, serviceLd, clampDesc } from "@/lib/seo";
 import { RegionBody } from "./RegionBody";
 
 interface Props {
@@ -19,7 +21,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!region) return {};
   return {
     title: `Охорона ${region.name}`,
-    description: region.lead.slice(0, 158),
+    description: clampDesc(region.lead),
+    alternates: { canonical: `/regiony/${region.slug}` },
   };
 }
 
@@ -30,6 +33,21 @@ export default async function RegionPage({ params }: Props) {
 
   return (
     <>
+      <JsonLd
+        data={[
+          breadcrumbLd([
+            { name: "Головна", path: "/" },
+            { name: "Регіони", path: "/regiony" },
+            { name: region.name, path: `/regiony/${region.slug}` },
+          ]),
+          serviceLd({
+            name: `Охорона — ${region.name}`,
+            description: clampDesc(region.lead),
+            path: `/regiony/${region.slug}`,
+            category: "Охоронні послуги",
+          }),
+        ]}
+      />
       <PageHeader
         eyebrow="Регіон"
         title={region.name}

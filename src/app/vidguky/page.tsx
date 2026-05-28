@@ -8,6 +8,7 @@ export const metadata: Metadata = {
   title: "Відгуки клієнтів",
   description:
     "Реальні відгуки керівників безпеки, власників бізнесу та ОСББ про роботу ЄКОР. Середній рейтинг 4.9 з 5, 12 верифікованих відгуків.",
+  alternates: { canonical: "/vidguky" },
 };
 
 export default function VidgukyPage() {

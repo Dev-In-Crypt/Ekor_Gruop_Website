@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Вартість послуг охорони",
   description:
     "Стартові ціни на послуги охорони ЄКОР: фізична охорона від 28 000 ₴/міс, БПЛА від 60 000 ₴, поліграф від 4 500 ₴. Калькулятор орієнтовної вартості.",
+  alternates: { canonical: "/ciny" },
 };
 
 export default function CinyPage() {

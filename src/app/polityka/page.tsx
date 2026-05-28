@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   title: "Політика конфіденційності",
   description:
     "Як ЄКОР збирає, зберігає та обробляє ваші персональні дані відповідно до Закону України «Про захист персональних даних» та GDPR.",
+  alternates: { canonical: "/polityka" },
 };
 
 export default function PolitykaPage() {
