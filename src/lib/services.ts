@@ -671,6 +671,7 @@ export const services: Service[] = [
     short: "Залізничні та автомаршрути по всій Україні. Озброєний супровід.",
     description: "Залізничні та автомаршрути по всій Україні. Озброєний супровід, спецзасоби.",
     iconType: "truck",
+    featured: true,
     priceFrom: "від 8 000 ₴/добу",
     highlights: [
       { num: "01", text: "Залізниця + авто" },
@@ -818,6 +819,7 @@ export const services: Service[] = [
     short: "Комплексне впровадження: фізична + технічна + ІТ + регламенти.",
     description: "Впровадження комплексної системи безпеки на об'єкті.",
     iconType: "shield",
+    featured: true,
     priceFrom: "за розрахунком",
     highlights: [
       { num: "01", text: "Аудит безпеки" },
