@@ -8,7 +8,7 @@ type ObjectType = "field" | "warehouse" | "zhk" | "office" | "industrial" | "eve
 const OBJECT_TYPES: { value: ObjectType; label: string; base: number }[] = [
   { value: "field", label: "Поле / Агро", base: 35000 },
   { value: "warehouse", label: "Склад / Логістика", base: 45000 },
-  { value: "zhk", label: "ЖК / ОСМД", base: 28000 },
+  { value: "zhk", label: "ЖК / ОСББ", base: 28000 },
   { value: "office", label: "Офіс / БЦ", base: 30000 },
   { value: "industrial", label: "Промисловість", base: 75000 },
   { value: "event", label: "Захід / Подія", base: 12000 },

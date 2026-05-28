@@ -99,6 +99,9 @@ export function AuditForm() {
             <input
               className="f-cta-inp"
               placeholder="Ім'я"
+              aria-label="Ім'я"
+              aria-invalid={err.name || undefined}
+              aria-required="true"
               value={f.name}
               style={{ borderLeftColor: err.name ? "#DC2626" : undefined }}
               onChange={(e) => {
@@ -108,7 +111,11 @@ export function AuditForm() {
             />
             <input
               className="f-cta-inp"
+              type="tel"
               placeholder="Телефон"
+              aria-label="Телефон"
+              aria-invalid={err.phone || undefined}
+              aria-required="true"
               value={f.phone}
               style={{ borderLeftColor: err.phone ? "#DC2626" : undefined }}
               onChange={(e) => {
@@ -118,6 +125,9 @@ export function AuditForm() {
             />
             <select
               className="f-cta-inp"
+              aria-label="Тип об'єкта"
+              aria-invalid={err.type || undefined}
+              aria-required="true"
               value={f.type}
               style={{
                 borderLeftColor: err.type ? "#DC2626" : undefined,
@@ -141,6 +151,9 @@ export function AuditForm() {
             <input
               className="f-cta-inp"
               placeholder="Місто"
+              aria-label="Місто"
+              aria-invalid={err.city || undefined}
+              aria-required="true"
               value={f.city}
               style={{ borderLeftColor: err.city ? "#DC2626" : undefined }}
               onChange={(e) => {
@@ -156,7 +169,7 @@ export function AuditForm() {
             >
               {submitting ? "Відправляємо…" : "Замовити безкоштовний аудит"}
             </button>
-            {submitErr && (
+            {(submitErr || Object.values(err).some(Boolean)) && (
               <div
                 role="alert"
                 style={{
@@ -168,7 +181,7 @@ export function AuditForm() {
                   color: "#FCA5A5",
                 }}
               >
-                {submitErr}
+                {submitErr ?? "Будь ласка, заповніть обов'язкові поля, виділені червоним."}
               </div>
             )}
           </form>

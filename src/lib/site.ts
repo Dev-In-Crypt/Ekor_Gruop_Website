@@ -44,7 +44,7 @@ export const site = {
   // home-hero stats — large numbers + progress fill share
   metrics: [
     { num: 260, sfx: "+", label: "об'єктів під охороною", fill: "75%" },
-    { num: 700, sfx: "+", label: "охоронців", fill: "85%" },
+    { num: 550, sfx: "+", label: "охоронців", fill: "85%" },
     { num: 5, sfx: "+", label: "років середній контракт", fill: "60%" },
     { display: "24/7", label: "без вихідних", fill: "100%" },
     { num: 15, label: "хвилин реагування", fill: "45%" },
