@@ -7,6 +7,7 @@ import { solutions } from "@/lib/solutions";
 // Колонки футера повторюють карту сайту з брифу
 const topSolutions = solutions.slice(0, 4);
 const topCategories = categories.slice(0, 4);
+const topRegions = site.regions.slice(0, 6);
 
 export function Footer() {
   return (
@@ -52,13 +53,13 @@ export function Footer() {
 
         <div className="f-foot-col">
           <h4>Регіони</h4>
-          {site.regions.map((r) => (
+          {topRegions.map((r) => (
             <Link key={r.slug} href={`/regiony/${r.slug}`}>
               {r.name}
             </Link>
           ))}
           <Link href="/regiony" style={{ color: "var(--g)", marginTop: 8 }}>
-            Карта регіонів →
+            Усі регіони →
           </Link>
         </div>
 
