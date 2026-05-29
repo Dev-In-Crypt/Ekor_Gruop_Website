@@ -610,6 +610,38 @@ select.f-cta-inp option { background: var(--bg2); color: var(--tx); }
   .f-sh, .f-page-head-in, .f-svc-grid { padding-left: 24px; padding-right: 24px; }
 }
 
+/* ===== MOBILE POLISH (тільки телефон, десктоп не зачіпається) ===== */
+@media (max-width: 600px) {
+  /* Hero — компактніший, менше «екранної порожнечі» та дрібніший шрифт */
+  .f-hero { padding: 92px 22px 52px; min-height: auto; }
+  .f-hero h1 { font-size: 40px; letter-spacing: 1px; margin-bottom: 4px; }
+  .f-hero-t2 { font-size: 40px; letter-spacing: 2px; margin-bottom: 22px; }
+  .f-hero-sub { font-size: 15px; line-height: 1.7; margin-bottom: 30px; }
+  .f-hero-btns { flex-direction: column; gap: 10px; width: 100%; }
+  .f-hero-btns .f-btn-gold, .f-hero-btns .f-btn-out { width: 100%; justify-content: center; }
+
+  /* Заголовки секцій — дрібніші */
+  .f-sh h2 { font-size: 23px; }
+  .f-sh { margin-bottom: 36px; }
+  .f-page-head h1 { font-size: 30px; }
+
+  /* Менше вертикального «повітря» між секціями */
+  .f-srv, .f-cta { padding: 60px 0; }
+  .f-stats-grid { grid-template-columns: 1fr 1fr; }
+
+  /* Картки — компактніший внутрішній відступ */
+  .f-srv-card { padding: 26px 22px; }
+  .f-srv-card h3 { font-size: 16px; }
+
+  /* Лічильники трохи менші + дихання у клітинках */
+  .f-stat { padding: 26px 14px; }
+  .f-stat-n { font-size: 30px; }
+
+  /* CTA-форма */
+  .f-cta { padding: 60px 0; }
+  .f-cta-form-wrap { padding: 36px 22px; }
+}
+
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: 0.001ms !important; transition-duration: 0.001ms !important; }
 }
