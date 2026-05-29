@@ -9,8 +9,10 @@ export const site = {
 
   phone: "+38 (093) 783-14-66",
   phoneHref: "tel:+380937831466",
-  email: "llc.sdc.ekor.ukraine@gmail.com",
-  emailHref: "mailto:llc.sdc.ekor.ukraine@gmail.com",
+  email: "office@ekorgroup.com.ua",
+  emailHref: "mailto:office@ekorgroup.com.ua",
+  auditEmail: "audit@ekorgroup.com.ua",
+  auditEmailHref: "mailto:audit@ekorgroup.com.ua?subject=Заявка%20на%20аудит%20безпеки",
 
   address: "м. Київ, вул. Олеся Гончара, 65",
   city: "Київ",

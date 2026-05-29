@@ -9,7 +9,8 @@ const ease = [0.16, 1, 0.3, 1] as const;
 
 const cards = [
   { label: "Телефон", value: site.phone, href: site.phoneHref, hint: "Цілодобово" },
-  { label: "Email", value: site.email, href: site.emailHref, hint: "Відповідь до 4 годин" },
+  { label: "Замовити аудит", value: site.auditEmail, href: site.auditEmailHref, hint: "Безкоштовний аудит безпеки об'єкта" },
+  { label: "Загальні питання", value: site.email, href: site.emailHref, hint: "Відповідь до 4 годин" },
   { label: "Офіс", value: site.address, href: null, hint: "Пн–Пт, 9:00–18:00" },
 ];
 
