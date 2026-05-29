@@ -52,7 +52,7 @@ export const navItems: NavItem[] = [
         title: "За галузями",
         href: "/rishennya",
         items: solutions.map((s) => ({
-          label: s.short || s.title,
+          label: s.title,
           href: s.hasPage ? `/rishennya/${s.slug}` : "/rishennya",
         })),
       },
