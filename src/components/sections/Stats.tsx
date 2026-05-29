@@ -27,14 +27,18 @@ export function Stats() {
 function StatCell({ item }: { item: StatItem }) {
   const ref = useRef<HTMLDivElement>(null);
   const inView = useInView(ref, { once: true, amount: 0.4 });
-  const [n, setN] = useState(0);
+  // SSR / no-JS / краулер бачать фінальне число (а не 0)
+  const [n, setN] = useState(item.num ?? 0);
+  const started = useRef(false);
 
   useEffect(() => {
-    if (!inView || item.num === undefined) return;
+    if (!inView || item.num === undefined || started.current) return;
+    started.current = true;
     const target = item.num;
     const start = performance.now();
     const dur = 2400;
     let raf = 0;
+    setN(0);
     const tick = (now: number) => {
       const p = Math.min(1, (now - start) / dur);
       const eased = 1 - Math.pow(1 - p, 4);
