@@ -135,7 +135,7 @@ export const solutions: Solution[] = [
     services: [
       { category: "fizychna", slug: "zhk" },
       { category: "tehnichna", slug: "signalizaciya" },
-      { category: "suprovid", slug: "grupy-reaghuvannya" },
+      { category: "suprovid", slug: "grupy-reaguvannya" },
     ],
     challenge:
       "Сторонні особи у під'їздах, крадіжки колісних дисків з паркінгу, конфлікти між мешканцями, брак реагування на побутові ситуації — типовий ЖК на 200-600 квартир має 4-8 інцидентів на місяць, з яких 60% залишаються нерозкритими. ОСББ не має ресурсу будувати власну службу безпеки, а класичний охоронець «без обличчя» не вирішує задачу комфорту мешканців. Потрібен баланс безпеки та сервісу, який досягається не лише камерами, а й правильним підбором людей.",
@@ -232,7 +232,7 @@ export const solutions: Solution[] = [
     services: [
       { category: "fizychna", slug: "shkil" },
       { category: "tehnichna", slug: "signalizaciya" },
-      { category: "suprovid", slug: "grupy-reaghuvannya" },
+      { category: "suprovid", slug: "grupy-reaguvannya" },
     ],
     challenge:
       "Освітній заклад — особлива категорія, де ціна помилки вимірюється не грошима, а здоров'ям дитини. Сторонні особи у коридорах, тривожні дзвінки про мінування, конфлікти між учнями з ризиком травм, спроби викрадення дитини після уроків — школа на 600-1200 учнів стикається з 1-3 такими ситуаціями на місяць. Класичний «вахтер» з газетою не вирішує цих задач, а батьки розраховують на повну безпеку дитини протягом 6-8 годин на день, які вона у школі.",
@@ -328,7 +328,7 @@ export const solutions: Solution[] = [
     hasPage: true,
     services: [
       { category: "fizychna", slug: "pidpryemstv" },
-      { category: "suprovid", slug: "grupy-reaghuvannya" },
+      { category: "suprovid", slug: "grupy-reaguvannya" },
       { category: "tehnichna", slug: "integrovana-bezpeka" },
     ],
     challenge:

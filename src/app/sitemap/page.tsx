@@ -9,7 +9,7 @@ import { site } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Карта сайту — усі сторінки ЄКОР",
   description:
-    "Повна структура сайту ekor-ukraine.com.ua — усі категорії послуг, рішення за галузями, регіони, кейси та службові сторінки.",
+    "Повна структура сайту ekorgroup.com.ua — усі категорії послуг, рішення за галузями, регіони, кейси та службові сторінки.",
   alternates: { canonical: "/sitemap" },
 };
 
@@ -97,7 +97,6 @@ export default function HTMLSitemap() {
           <Group title="Службові">
             <Link href="/polityka">Політика конфіденційності</Link>
             <Link href="/umovy">Умови використання</Link>
-            <Link href="/dyakuyemo">Подяка за заявку</Link>
             <Link href="/sitemap.xml">XML-карта сайту (для пошукових систем)</Link>
           </Group>
         </div>

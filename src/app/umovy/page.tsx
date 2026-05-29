@@ -5,7 +5,7 @@ import { site } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Умови використання",
   description:
-    "Правила використання сайту ekor-ukraine.com.ua. Інтелектуальна власність, відповідальність, зміни умов.",
+    "Правила використання сайту ekorgroup.com.ua. Інтелектуальна власність, відповідальність, зміни умов.",
   alternates: { canonical: "/umovy" },
 };
 
@@ -21,7 +21,7 @@ export default function UmovyPage() {
       <section className="f-svc-body">
         <article className="f-legal">
           <p className="f-legal-intro">
-            Користуючись сайтом ekor-ukraine.com.ua, ви автоматично погоджуєтесь з
+            Користуючись сайтом ekorgroup.com.ua, ви автоматично погоджуєтесь з
             нижчевикладеними умовами. Якщо ви не згодні — будь ласка, припиніть
             користування сайтом.
           </p>

@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     template: `%s — ${site.name}`,
   },
   description: site.description,
-  metadataBase: new URL("https://ekor-ukraine.com.ua"),
+  metadataBase: new URL("https://ekorgroup.com.ua"),
   openGraph: {
     title: site.name,
     description: site.description,

@@ -1,7 +1,7 @@
 import { site } from "./site";
 import { regions } from "./regions";
 
-export const SITE_URL = "https://ekor-ukraine.com.ua";
+export const SITE_URL = "https://ekorgroup.com.ua";
 
 /** Обрізає опис до межі по словах (за замовчуванням ~158 символів для SEO). */
 export function clampDesc(text: string, max = 158): string {

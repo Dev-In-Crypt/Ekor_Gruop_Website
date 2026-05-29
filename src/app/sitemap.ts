@@ -4,7 +4,7 @@ import { solutions } from "@/lib/solutions";
 import { cases } from "@/lib/cases";
 import { site } from "@/lib/site";
 
-const BASE = "https://ekor-ukraine.com.ua";
+const BASE = "https://ekorgroup.com.ua";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();

@@ -103,7 +103,7 @@ export const cases: Case[] = [
     },
     services: [
       { category: "suprovid", slug: "vantazhiv" },
-      { category: "suprovid", slug: "grupy-reaghuvannya" },
+      { category: "suprovid", slug: "grupy-reaguvannya" },
     ],
     narrative: [
       "Ігор Біленький прийшов до нас з конкретною болью: «За останній рік ми втратили дві фури зерна на маршрутах через прифронтові області. Чотири охоронні агенції відмовились нам супроводжувати. Ви — наша остання надія». Це було влітку 2021 року, ми тоді тільки запускались на ринку безпеки супроводу.",
@@ -194,7 +194,7 @@ export const cases: Case[] = [
     services: [
       { category: "fizychna", slug: "zhk" },
       { category: "tehnichna", slug: "signalizaciya" },
-      { category: "suprovid", slug: "grupy-reaghuvannya" },
+      { category: "suprovid", slug: "grupy-reaguvannya" },
     ],
     narrative: [
       "Андрій Шевченко звернувся до нас на початку 2023 року з нетиповою задачею. ЖК «Парковий» вже мав охорону — від забудовника. Але якість роботи була низькою: охоронці змінювались щомісяця, скарг від мешканців багато, реальної реакції на інциденти — мало. Голова ОСББ хотів перевести охорону на власний договір, але стикався з опором забудовника.",
