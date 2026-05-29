@@ -1,5 +1,6 @@
 export const site = {
-  name: "ЄКОР УКРАЇНА",
+  name: "EKOR GROUP",
+  altName: "ЄКОР Україна",
   brand: "EKOR GROUP",
   legal: "ТОВ «Єкор Україна»",
   tagline: "Охоронно-детективна компанія",

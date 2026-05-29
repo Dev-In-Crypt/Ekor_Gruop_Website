@@ -22,6 +22,7 @@ export function organizationLd() {
     "@type": ["Organization", "LocalBusiness", "SecurityService"],
     "@id": `${SITE_URL}/#organization`,
     name: site.name,
+    alternateName: site.altName,
     legalName: site.legal,
     url: SITE_URL,
     logo: abs("/ekor-emblem.png"),

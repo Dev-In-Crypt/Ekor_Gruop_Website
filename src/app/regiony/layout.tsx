@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Регіони присутності — ЄКОР УКРАЇНА",
-    template: "%s — ЄКОР УКРАЇНА",
+    absolute: "Регіони присутності — EKOR GROUP",
+    template: "%s — EKOR GROUP",
   },
   description:
     "Власні групи реагування у 12 регіонах України — Київ, Одеса, Львів, Миколаїв, Вінниця та інші. Готові розгорнути охорону у будь-якій точці країни.",
